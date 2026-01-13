@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sarkari Jobs Portal | Latest Government Jobs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root { --primary: #2364c7; --secondary: #13b0a4; --light-bg: #f3f6fb; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--light-bg); margin: 0; }
+    
+    header { background: linear-gradient(90deg, var(--primary), var(--secondary)); color: #fff; padding: 25px 0; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    h1 { margin: 0; font-size: 2.8em; text-transform: uppercase; letter-spacing: 1px; }
+    
+    /* Navigation */
+    nav ul { display: flex; justify-content: center; gap: 30px; list-style: none; margin: 20px 0 0 0; padding: 0; }
+    nav a { color: #fff; text-decoration: none; font-weight: 600; padding: 5px 10px; border-radius: 4px; transition: 0.3s; }
+    nav a:hover { background: rgba(255,255,255,0.2); }
+
+    /* Search Bar */
+    .search-container { margin: 20px auto; text-align: center; }
+    .search-container input { padding: 12px 20px; width: 50%; border-radius: 25px; border: none; box-shadow: 0 2px 5px rgba(0,0,0,0.1); outline: none; }
+
+    /* News Ticker */
+    .ticker { background: #fff; padding: 10px; border-bottom: 2px solid var(--secondary); overflow: hidden; white-space: nowrap; }
+    .ticker span { color: red; font-weight: bold; animation: scroll 15s linear infinite; display: inline-block; }
+    @keyframes scroll { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
+
+    /* Main Sections */
+    section.jobs { background: #fff; margin: 25px 10%; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); padding: 20px; overflow: hidden; }
+    section.jobs h2 { background: var(--primary); color: white; padding: 10px 15px; border-radius: 5px; margin-top: 0; font-size: 1.2em; }
+    
+    ul { list-style: none; padding: 0; }
+    li { padding: 15px; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; transition: 0.2s; }
+    li:hover { background: #f9fbff; transform: scale(1.01); }
+    li:last-child { border-bottom: none; }
+    
+    a { color: var(--primary); text-decoration: none; font-weight: bold; }
+    .new-badge { background: red; color: white; font-size: 10px; padding: 2px 6px; border-radius: 3px; margin-left: 5px; animation: blink 1s infinite; }
+    
+    @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0.4; } 100% { opacity: 1; } }
+
+    .contact { background: var(--secondary); color: #fff; text-align: center; padding: 30px 0; margin: 40px 10%; border-radius: 12px; }
+    footer { background: #1a1a1a; color: #ccc; padding: 20px; text-align: center; margin-top: 50px; }
+
+    @media (max-width:700px) {
+      section.jobs, .contact { margin: 15px 4%; }
+      .search-container input { width: 80%; }
+      nav ul { flex-wrap: wrap; gap: 10px; }
+      h1 { font-size: 1.8em; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sarkari Jobs Portal</h1>
+    <nav>
+      <ul>
+        <li><a href="#jobs">Latest Jobs</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#admit">Admit Card</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="ticker">
+    <span>🔥 SSC GD Constable 2025 Apply Online Start | Railway JE Exam Dates Out | Bihar State Clerk Result 2025 Available Now!</span>
+  </div>
+
+  <div class="search-container">
+    <input type="text" placeholder="Search for Jobs, Results, Admit Cards...">
+  </div>
+
+  <section class="jobs" id="jobs">
+    <h2>Latest Sarkari Jobs</h2>
+    <ul>
+      <li><span>SSC GD Constable 2025 <span class="new-badge">NEW</span></span> <a href="#">Apply Online</a></li>
+      <li><span>UP Police SI Recruitment</span> <a href="#">View Details</a></li>
+      <li><span>IBPS Clerk Phase II</span> <a href="#">Apply Now</a></li>
+      <li><span>Indian Navy Agniveer</span> <a href="#">Last Date: 20 Nov</a></li>
+    </ul>
+  </section>
+
+  <section class="jobs" id="results">
+    <h2>Sarkari Results</h2>
+    <ul>
+      <li><span>Bihar State Clerk Result 2025</span> <a href="#">Check Now</a></li>
+      <li><span>UPPSC PCS Pre 2025 Result</span> <a href="#">Download PDF</a></li>
+    </ul>
+  </section>
+
+  <section class="jobs" id="admit">
+    <h2>Admit Cards</h2>
+    <ul>
+      <li><span>Railway JE Admit Card 2025</span> <a href="#">Download</a></li>
+      <li><span>SSC CGL Tier-II Admit Card</span> <a href="#">Click Here</a></li>
+    </ul>
+  </section>
+
+  <div class="contact" id="contact">
+    <h2>Quick Help?</h2>
+    <p>📧 Email: patelajeetk654@zohomail.in</p>
+    <p>📞 Phone: +91 9120187733</p>
+  </div>
+
+  <footer>
+    <p>© 2026 Sarkari Jobs Portal | Designed with ❤️ by Ajeet Kumar Patel</p>
+  </footer>
+
+</body>
+</html>
